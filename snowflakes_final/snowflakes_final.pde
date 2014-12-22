@@ -1,34 +1,29 @@
 /*
 
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  Decoded Holidays Snowflake Generator
+  
+  Copyright (C) 2014 Decoded
+  
+  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+  The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 */
 
-// Setup all your variables.
-// Variable and value for the size of the flake.
+// Setup all your variables to affect snowflake generation.
+// How big should the snowflake be?
 float size = 70;
-// Variable and value for the detail of each branch.
+// How detailed should each snowflake branch be?
 float detail = 5;
-// Variable and value for the number of branch levels.
+// How many levels should each snowflake have?
 int levels = 5;
 int branches;
 
-// Setting up the code.
+// Getting ready to draw snowflakes
 void setup() {
-  // Defining the size of the canvas.
+  // How large will the image containing the snowflake be?
   size(431, 309);
-  // Makes the background color yellow on setup.
+  // Makes the background color of the image Decoded yellow.
   background(255, 241, 0);
   // Take a stroke off of everything.
   noStroke();
@@ -36,7 +31,7 @@ void setup() {
 
 // Looping through all the code and draw a new snowflake each time.
 void draw() {
-  // Makes the background color yellow every frame
+  // Makes the background Decoded color yellow every frame
   // and covers up the previous design.
   background(255, 241, 0);
   // Makes all the snowflakes white.
